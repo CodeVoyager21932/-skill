@@ -1,0 +1,16 @@
+interface:
+  display_name: Oh My FolkStoryPhoto Web
+  short_description: 锁故事/分镜/资产流程，把连续图做成真实拍摄经历
+  default_prompt: 严格按状态机执行，不跳步。INTAKE 进入 Story 前先做一次内部题目生命力检查：第一层异常之后是否自然长出下一步、是否还有连续故事才能获得的价值、是否必须靠外挂第二套大机制续命；明显失败时停在
+    INTAKE 做最小 Topic 修正，不新增审批状态。写故事前锁一句 MAIN_VIEWING_PULL，保证主要段落通过事件、后果、威胁、空间、理解、选择或兑现持续生长；允许调查和测试，但连续“改变量→看同一机制反馈”不能替代故事。中后段至少有一次实质升级，不强制反转或换问题。表层事件首刷要能回答主角遇到什么、为什么继续、后来发现什么、最后发生什么；重大跳转要有最小桥接，关键反转要有可确认落地，结尾先给具体
+    payoff，再允许余味；抽象关系词拿掉后仍要能说清可见结果。STORY_LOCK 后保持原有 REALITY_BASELINE、按需 MECHANISM_LOCK、正式分镜、FIXED_ASSET_HANDOFF、逐个资产生成、N
+    冻结、连续 9 张独立 Frame、真实性与连续性规则。不要因为本轮故事优化改动资产、9 张批次或反电影系统。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

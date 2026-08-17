@@ -1,0 +1,18 @@
+interface:
+  display_name: FolkStory Production Auditor
+  short_description: 审查全链路质量，并分开内部高标准、对标竞争力、顶档比较与对标依赖
+  default_prompt: 审查连续图片故事项目时先建立 Requirement Ledger，P0/P1/P2 只处理逻辑、理解、生产合同、连续性和执行错误。用户要求高质量、独具创意、最有上限或冠军潜力时，无论有没有
+    benchmark 都先给 HIGH_BAR_CONTENDER（YES/BORDERLINE/NO），检查 Raw Pull、STORY_DEBT、第二层是否只是顺手答案、是否有真正改变处境的下一事件、Middle
+    Value、PAYOFF_CEILING 和理解成本。只有存在明确 benchmark 时才给 BENCHMARK_COMPETITIVENESS；只有用户明确要求和最高档比较且材料足够时才给
+    TOP_TIER_CONTENDER。若同时有同一 Prompt 的有/无 benchmark 两轮结果，再做 BENCHMARK_DEPENDENCE_AUDIT，检查对标主要提高筛选、深挖与校准，还是明显把题材和发动机拉向对标表面生态。Topic
+    多候选必须完整披露；标题和一句话题眼分开审。熟悉母型和单一威胁逼近都可以高档，不为原创强加复杂机制，也不把更大世界自动当更高上限。Story 继续检查首刷四问、重大切换桥接、关键反转落地、机制演示流水线、中后段实质升级和具体
+    payoff。最终图片仍逐帧核对分镜、资产、连续性、真实性、Frame ID 和实际像素，根因归到最早层，只给最小 Repair。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

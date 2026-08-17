@@ -1,0 +1,18 @@
+interface:
+  display_name: Folkstory Topic Miner
+  short_description: 先盲创会长成故事的种子，再用对标后置校准并把最强方向挖到高水位
+  default_prompt: 请帮我挖适合连续图片作品的题。即使用户提供 benchmark，也先让 Skill 自己生成粗种子：优先只登记对标范围，第一轮不借具体人物、地点、怪物、物件、反转或题眼来生题；粗种子形成以后再读取
+    benchmark，把它抽象成观看强度、STORY_DEBT、事件惯性、第二层质量、PAYOFF_CEILING、理解成本和标题揭示深度等校准信号，用于筛选、排序、深挖与外部比较。内部大范围发散后，对有希望的种子做三步事件试跑，只挑少数最强方向纵向深挖；保留第一条自然后续为
+    BASELINE，再寻找性质不同的下一事件或含义，优先“具体事情改变处境”，不要默认用更大世界/更深空间冒充升级。用户要求高质量、独具创意、最有上限或冠军候选时，无论有没有
+    benchmark 都做 HIGH_BAR_CHALLENGE；有 benchmark 再额外做 EXTERNAL_TOP_TIER_COMPARISON。最终池不要求
+    6 个全是冠军，但高质量请求至少要有一个可信 HIGH_BAR_CONTENDER，否则继续深挖。标题和一句话题眼分开，不提前输出正式剧情、结局、分镜、视角或
+    Prompt。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
